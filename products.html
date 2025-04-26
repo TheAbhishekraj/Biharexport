@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bihar Agri Products - Export Quality</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            background: #2E7D32;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Product Grid */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        /* WhatsApp Integration */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            text-decoration: none;
+        }
+
+        /* Product Specs */
+        .product-specs {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917004885581?text=Hi%20I%20want%20export%20agricultural%20products%20from%20Bihar" 
+       class="whatsapp-fab">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header class="header">
+        <h1>Bihar Agricultural Exports</h1>
+        <p>Premium Quality • Direct from Farms</p>
+    </header>
+
+    <main class="product-container">
+        <!-- Litchi -->
+        <div class="product-card">
+            <img src="images/litchi.jpg" alt="Muzaffarpur Litchi" class="product-image">
+            <h2>Muzaffarpur Litchi (GI Tagged)</h2>
+            <div class="product-specs">
+                <div class="spec-item">
+                    <span>MOQ:</span>
+                    <span>500 kg</span>
+                </div>
+                <div class="spec-item">
+                    <span>Price:</span>
+                    <span>₹120-150/kg</span>
+                </div>
+                <div class="spec-item">
+                    <span>Season:</span>
+                    <span>May-June</span>
+                </div>
+            </div>
+            <button class="enquiry-btn" 
+                    onclick="window.location.href='https://wa.me/917004885581?text=Litchi%20Enquiry'">
+                Get Quote
+            </button>
+        </div>
+
+        <!-- Rice -->
+        <div class="product-card">
+            <img src="images/rice.jpg" alt="Bihar Rice" class="product-image">
+            <h2>Premium Rice Varieties</h2>
+            <div class="product-specs">
+                <div class="spec-item">
+                    <span>Types:</span>
+                    <span>Sona Masoori, Basmati</span>
+                </div>
+                <div class="spec-item">
+                    <span>MOQ:</span>
+                    <span>1 MT</span>
+                </div>
+                <div class="spec-item">
+                    <span>Price:</span>
+                    <span>₹40-80/kg</span>
+                </div>
+            </div>
+            <button class="enquiry-btn" 
+                    onclick="window.location.href='https://wa.me/917004885581?text=Rice%20Enquiry'">
+                Get Quote
+            </button>
+        </div>
+
+        <!-- Add More Products Following Same Structure -->
+    </main>
+
+    <!-- Business Address -->
+    <footer class="address-footer">
+        <div class="address-card">
+            <h3><i class="fas fa-map-marker-alt"></i> Registered Office</h3>
+            <p>NH80 Safiabaad, Munger</p>
+            <p>Bihar - 811201, India</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +91 70048 85581</p>
+                <p><i class="fas fa-envelope"></i> contact@biharexport.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
